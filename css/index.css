@@ -134,3 +134,46 @@ width: 90% !important;
 .marketing{
 	width: 80%;
 } 
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 5rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: white;
+    text-align: left;
+    list-style: none;
+    background-color: #49649f;
+    background-clip: padding-box;
+     border:none; 
+    border-radius: .25rem;
+}
+.dropdown-menu  a{
+    
+    color: white;
+    text-align: left;
+    list-style: none;
+    background-color: #49649f;
+    
+}
+
+.dropdown-menu  a:hover{
+    
+    color: white;
+    text-align: left;
+    list-style: none;
+    background-color: #49649f;
+    
+}
+a {
+    color: #353535;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
