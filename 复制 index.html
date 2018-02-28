@@ -51,7 +51,7 @@
 <img src="imgs/world-trade.png" alt="Logo">
 					</a>-->
 				<!-- Links -->
-				<div class="collapse navbar-collapse  container-fluid" id="collapsibleNavbar">
+				<div class="collapse navbar-collapse navbar-fixed-top" id="collapsibleNavbar">
 					<ul class="navbar-nav nav  mx-auto  text-center nav-justified ">
 						<li class="nav-item">
 							<a class="nav-item" href="#">
@@ -309,7 +309,22 @@
 
 				</div>
 				</div>
-				
+				<footer class="nav navbar navbar-expand-sm navbar-fixed-bottom nav-footer mx-auto">
+					
+						
+					
+					<ul class=" nav-footer-item">
+						<li class="nav-item">贵州国际商会</li>
+						<li class="nav-item">邮政编码：850002</li>
+						<li class="nav-item">Tel：0851-88665029／88555448 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Fax：0851-88555655 </li>
+						
+						<li class="nav-item">地址：贵阳市云岩区延安中路48号世贸广场B区2203室</li>
+						<li class="nav-item">贵州国际商会</li>
+						</ul>
+                     <div class="navbar-brand pull-right">
+                     	<img src="imgs/erweima.png"/>
+                     </div>
+			  </footer>
 		</div>
 		<!-- /.container -->
 
@@ -326,7 +341,26 @@
 		<script>
 			$(document).ready(function() {
 
-				
+				var widget = $('.tabs-vertical');
+
+				var tabs = widget.find('ul a'),
+					content = widget.find('.tabs-content-placeholder > div');
+
+				tabs.on('click', function(e) {
+
+					e.preventDefault();
+
+					// Get the data-index attribute, and show the matching content div
+
+					var index = $(this).data('index');
+
+					tabs.removeClass('tab-active');
+					content.removeClass('tab-content-active');
+
+					$(this).addClass('tab-active');
+					content.eq(index).addClass('tab-content-active');
+
+				});
 				/*滚动滑动*/
 				$(window).scroll(function() {
 					if($(window).scrollTop() > 300) {
