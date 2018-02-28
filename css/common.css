@@ -1,0 +1,18 @@
+.header-style{
+	background-color: #FFFFFF;
+}
+.header-top-label{
+	margin-top:5px
+}
+.nav-footer{
+	height: 170px;
+	background-color: #3b4157;
+	color: #808080;
+	
+	
+}
+.nav-footer-item{
+	margin-left: 20%;
+	padding: 10px;
+	list-style: none;
+}
