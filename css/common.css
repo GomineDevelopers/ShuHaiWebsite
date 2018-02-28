@@ -2,7 +2,7 @@
 	background-color: #FFFFFF;
 }
 .header-top-label{
-	margin-top:5px
+	margin-top:0.5em
 }
 .nav-footer{
 	height: 170px;
@@ -15,4 +15,7 @@
 	margin-left: 20%;
 	padding: 10px;
 	list-style: none;
+}
+.erweima{
+	margin-left: 30%;
 }
